@@ -12,9 +12,8 @@
       href="./favicon.png"
       type="image/png"
     />
-  <style>
-
-    @charset "UTF-8";
+    <style>
+      @charset "UTF-8";
 article,
 aside,
 details,
@@ -206,6 +205,9 @@ html {
 .bottomDecor {
   max-width: 10vw;
 }
+.btn {
+  z-index: 55;
+}
 @media (min-aspect-ratio: 1/1) {
   .decor__bottom {
     right: 4vw;
@@ -378,7 +380,7 @@ html {
     width: 9vh;
   }
   .left .phone {
-    top: 50%;
+    top: 51%;
     left: 50%;
     transform: translate(-50%, -48%);
   }
@@ -413,7 +415,7 @@ html {
     top: 13vh;
   }
   .right .btn {
-    bottom: 4vh;
+    bottom: 2.5vh;
   }
   .right .btn img {
     width: 30vh;
@@ -430,7 +432,7 @@ html {
   }
   .right .finger.fingerNext {
     transition: all 2s;
-    top: 59vh;
+    top: 60vh;
     animation: finTup3 2s ease-in-out infinite alternate;
     transform: scale(1);
     left: 52vw;
@@ -490,8 +492,25 @@ html {
 .logo svg {
   width: 30vw;
 }
+.phoneFiveImg {
+  animation: phone5 5s ease-in-out infinite alternate;
+}
+@keyframes phone5 {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
-  </style>
+    </style>
   </head>
 
   <body>
