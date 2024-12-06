@@ -735,6 +735,7 @@ body::-webkit-scrollbar-thumb {
 .header__wrapper {
   padding-top: 24px;
   height: 800px;
+  height: 100dvh;
   max-height: 100dvh;
   background-image: url("../img/top-bg.png");
   background-size: cover;
