@@ -73,20 +73,20 @@ l.forEach((a) => {
     d = `
       <div class="calendar__item ${t}" data-date="${a.date}">
         <div class="calendar__item-bg--lock">
-          <img src="./img/calendar/icelock.png" alt="">
+          <img src="./img/calendar/icelock.png" alt="lock">
         </div>
         <div class="calendar__item-bg">
-          <img src="./img/calendar/ice.png" alt="">
+          <img src="./img/calendar/ice.png" alt="ice">
         </div>
   
         <div class="calendar__item-status">${
           t === "locked" ? "Locked" : t.charAt(0).toUpperCase() + t.slice(1)
         }</div>
         <div class="calendar__item-gift">
-          <img src=".${a.img}" alt="">
+          <img src=".${a.img}" alt="gift">
         </div>
         <div class="calendar__item-day">${n}/</div>
-        <a href="#" class="calendar__item-btn">Open</a>
+        <a href="https://million.ro/ro" class="calendar__item-btn" target="_blank">Open</a>
       </div>
     `;
   m.innerHTML += d;
