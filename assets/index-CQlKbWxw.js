@@ -1,4 +1,14 @@
 (function () {
+  document.addEventListener("contextmenu", function (e) {
+    e.preventDefault(); // Предотвращает открытие контекстного меню
+  });
+
+  document.addEventListener("keydown", function (e) {
+    // Заблокируем стандартные сочетания клавиш для контекстного меню
+    if (e.ctrlKey || (e.key === "S" && (e.ctrlKey || e.metaKey))) {
+      e.preventDefault();
+    }
+  });
   const t = document.createElement("link").relList;
   if (t && t.supports && t.supports("modulepreload")) return;
   for (const e of document.querySelectorAll('link[rel="modulepreload"]')) d(e);
