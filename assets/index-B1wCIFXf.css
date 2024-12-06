@@ -963,6 +963,10 @@ body::-webkit-scrollbar-thumb {
 }
 .top__item img {
   width: 168px;
+  transition: transform 0.3s;
+}
+.top__item img:hover {
+  transform: rotate(-10deg);
 }
 .top__item-num {
   font-size: 13.33px;
