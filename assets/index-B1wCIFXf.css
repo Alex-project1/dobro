@@ -47,6 +47,23 @@ a {
   text-decoration: none;
   color: inherit;
 }
+::selection {
+  background: #f2d669;
+  color: #fff;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #202020;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #f2d669;
+  border-radius: 20px;
+  border: 3px solid #202020;
+}
 .bg {
   position: absolute;
   top: 0;
@@ -774,6 +791,10 @@ a {
   width: 120px;
   position: relative;
   z-index: 3;
+  transition: transform 0.3s;
+}
+.header__top .logo:hover {
+  transform: scale(1.1);
 }
 @media (max-width: 550px) {
   .header__top .logo {
