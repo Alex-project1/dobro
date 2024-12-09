@@ -1,4 +1,14 @@
 (function () {
+    document.addEventListener('contextmenu', (event) => {
+        event.preventDefault();
+    });
+    document.addEventListener('keydown', (event) => {
+        if ((event.ctrlKey || event.metaKey) && event.key === 's') {
+            event.preventDefault(); // Отменяет действие по умолчанию (сохранение страницы)
+            alert('Сохранение страницы отключено!');
+        }
+    });
+    // ---------------
   const t = document.createElement("link").relList;
   if (t && t.supports && t.supports("modulepreload")) return;
   for (const e of document.querySelectorAll('link[rel="modulepreload"]')) d(e);
