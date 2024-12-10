@@ -1,14 +1,5 @@
 (function () {
-    document.addEventListener('contextmenu', (event) => {
-        event.preventDefault();
-    });
-    document.addEventListener('keydown', (event) => {
-        if ((event.ctrlKey || event.metaKey) && event.key === 's') {
-            event.preventDefault(); // Отменяет действие по умолчанию (сохранение страницы)
-            alert('Сохранение страницы отключено!');
-        }
-    });
-    // ---------------
+
   const t = document.createElement("link").relList;
   if (t && t.supports && t.supports("modulepreload")) return;
   for (const e of document.querySelectorAll('link[rel="modulepreload"]')) d(e);
@@ -39,37 +30,37 @@
   }
 })();
 const l = [
-    { date: "01.12.2024", img: "/img/calendar/box.png" },
-    { date: "02.12.2024", img: "/img/calendar/cup.png" },
-    { date: "03.12.2024", img: "/img/calendar/box.png" },
-    { date: "04.12.2024", img: "/img/calendar/coins.png" },
-    { date: "05.12.2024", img: "/img/calendar/cup.png" },
-    { date: "06.12.2024", img: "/img/calendar/box.png" },
-    { date: "07.12.2024", img: "/img/calendar/box.png" },
-    { date: "08.12.2024", img: "/img/calendar/box.png" },
-    { date: "09.12.2024", img: "/img/calendar/box.png" },
-    { date: "10.12.2024", img: "/img/calendar/box.png" },
-    { date: "11.12.2024", img: "/img/calendar/box.png" },
-    { date: "12.12.2024", img: "/img/calendar/box.png" },
-    { date: "13.12.2024", img: "/img/calendar/box.png" },
-    { date: "14.12.2024", img: "/img/calendar/box.png" },
-    { date: "15.12.2024", img: "/img/calendar/box.png" },
-    { date: "16.12.2024", img: "/img/calendar/box.png" },
-    { date: "17.12.2024", img: "/img/calendar/box.png" },
-    { date: "18.12.2024", img: "/img/calendar/box.png" },
-    { date: "19.12.2024", img: "/img/calendar/box.png" },
-    { date: "20.12.2024", img: "/img/calendar/box.png" },
-    { date: "21.12.2024", img: "/img/calendar/box.png" },
-    { date: "22.12.2024", img: "/img/calendar/box.png" },
-    { date: "23.12.2024", img: "/img/calendar/box.png" },
-    { date: "24.12.2024", img: "/img/calendar/box.png" },
-    { date: "25.12.2024", img: "/img/calendar/box.png" },
-    { date: "26.12.2024", img: "/img/calendar/box.png" },
-    { date: "27.12.2024", img: "/img/calendar/box.png" },
-    { date: "28.12.2024", img: "/img/calendar/box.png" },
-    { date: "29.12.2024", img: "/img/calendar/box.png" },
-    { date: "30.12.2024", img: "/img/calendar/box.png" },
-    { date: "31.12.2024", img: "/img/calendar/box.png" },
+    { date: "01.12.2024", img: "/img/calendar/box.webp" },
+    { date: "02.12.2024", img: "/img/calendar/cup.webp" },
+    { date: "03.12.2024", img: "/img/calendar/box.webp" },
+    { date: "04.12.2024", img: "/img/calendar/coins.webp" },
+    { date: "05.12.2024", img: "/img/calendar/cup.webp" },
+    { date: "06.12.2024", img: "/img/calendar/box.webp" },
+    { date: "07.12.2024", img: "/img/calendar/box.webp" },
+    { date: "08.12.2024", img: "/img/calendar/box.webp" },
+    { date: "09.12.2024", img: "/img/calendar/box.webp" },
+    { date: "10.12.2024", img: "/img/calendar/box.webp" },
+    { date: "11.12.2024", img: "/img/calendar/box.webp" },
+    { date: "12.12.2024", img: "/img/calendar/box.webp" },
+    { date: "13.12.2024", img: "/img/calendar/box.webp" },
+    { date: "14.12.2024", img: "/img/calendar/box.webp" },
+    { date: "15.12.2024", img: "/img/calendar/box.webp" },
+    { date: "16.12.2024", img: "/img/calendar/box.webp" },
+    { date: "17.12.2024", img: "/img/calendar/box.webp" },
+    { date: "18.12.2024", img: "/img/calendar/box.webp" },
+    { date: "19.12.2024", img: "/img/calendar/box.webp" },
+    { date: "20.12.2024", img: "/img/calendar/box.webp" },
+    { date: "21.12.2024", img: "/img/calendar/box.webp" },
+    { date: "22.12.2024", img: "/img/calendar/box.webp" },
+    { date: "23.12.2024", img: "/img/calendar/box.webp" },
+    { date: "24.12.2024", img: "/img/calendar/box.webp" },
+    { date: "25.12.2024", img: "/img/calendar/box.webp" },
+    { date: "26.12.2024", img: "/img/calendar/box.webp" },
+    { date: "27.12.2024", img: "/img/calendar/box.webp" },
+    { date: "28.12.2024", img: "/img/calendar/box.webp" },
+    { date: "29.12.2024", img: "/img/calendar/box.webp" },
+    { date: "30.12.2024", img: "/img/calendar/box.webp" },
+    { date: "31.12.2024", img: "/img/calendar/box.webp" },
   ],
   g = new Date(),
   o = g.toLocaleDateString("en-GB").replace(/\//g, "."),
@@ -83,10 +74,10 @@ l.forEach((a) => {
     d = `
       <div class="calendar__item ${t}" data-date="${a.date}">
         <div class="calendar__item-bg--lock">
-          <img src="./img/calendar/icelock.png" alt="lock">
+          <img src="./img/calendar/icelock.webp" alt="lock">
         </div>
         <div class="calendar__item-bg">
-          <img src="./img/calendar/ice.png" alt="ice">
+          <img src="./img/calendar/ice.webp" alt="ice">
         </div>
   
         <div class="calendar__item-status">${

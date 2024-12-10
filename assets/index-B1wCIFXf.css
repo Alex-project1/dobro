@@ -737,7 +737,7 @@ body::-webkit-scrollbar-thumb {
   height: 800px;
   height: 100dvh;
   max-height: 100dvh;
-  background-image: url("../img/top-bg.png");
+  background-image: url("../img/top-bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -989,7 +989,7 @@ body::-webkit-scrollbar-thumb {
 }
 .calendar {
   position: relative;
-  background-image: url("../img/calendar/bg.png");
+  background-image: url("../img/calendar/bg.webp");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom center;
